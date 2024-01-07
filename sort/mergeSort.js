@@ -2,13 +2,10 @@ function mergeSort(array) {
   if (array.length <= 1) {
     return array;
   }
-  const [left, right] = splitInHalf(array);
-  return merge(mergeSort(left), mergeSort(right));
-}
-
-function splitInHalf(array) {
-  const half = Math.round(array.length / 2);
-  return [array.slice(0, half), array.slice(half)];
+  const mid = Math.floor(array.length / 2);
+  const left = mergeSort(array.slice(0, mid));
+  const right = mergeSort(array.slice(mid));
+  return merge(left, right);
 }
 
 function merge(left, right) {
@@ -29,5 +26,3 @@ function merge(left, right) {
   }
   return result;
 }
-
-console.log(mergeSort([6, 3, 2, 8, 1]));
