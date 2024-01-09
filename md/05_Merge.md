@@ -54,4 +54,6 @@ function mergeSort(array) {
 ---
 
 참조
-[Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
+
+- Udemy 강의`JavaScript 알고리즘 & 자료구조 마스터클래스` / Colt Steele / 2023.08.
+- [Visualgo](https://visualgo.net/en)
